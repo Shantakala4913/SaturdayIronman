@@ -26,4 +26,28 @@ public class EbaySearchResultActions {
 		//Option 3
 		EbaySearchResultLocatorsObj.txtShoes.isDisplayed();
 	}
+	
+	public void filterBrand(String brand){
+		if(brand.equals("Adidas")){
+			EbaySearchResultLocatorsObj.cbxBrandAdidas.click();
+		} else if(brand.equals("Nike")){
+			EbaySearchResultLocatorsObj.cbxBrandNike.click();
+		}	else if(brand.equals("Unbranded")){
+			EbaySearchResultLocatorsObj.cbxBrandUnbranded.click();
+		}  else {
+			System.out.println("Brand not found");
+		}
+	}
+	
+	public void verifyBrandItems(String brand){
+		if(brand.equals("Adidas")){
+			Assert.assertTrue(EbaySearchResultLocatorsObj.txtShirts.isDisplayed());
+		} else if(brand.equals("Nike")){
+			Assert.assertTrue(EbaySearchResultLocatorsObj.txtShoes.isDisplayed());
+		}	else if(brand.equals("Unbranded")){
+			Assert.assertTrue(EbaySearchResultLocatorsObj.txtPants.isDisplayed());
+		}  else {
+			System.out.println("Brand not found");
+		}
+	}
 }
