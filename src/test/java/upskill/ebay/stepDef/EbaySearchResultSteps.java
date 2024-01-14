@@ -22,4 +22,9 @@ public class EbaySearchResultSteps {
 	public void item_list_should_have_products_of(String brand) throws Throwable {
 		EbaySearchResultActionsObj.verifyBrandItems(brand);
 	}
+	
+	@When("^Select the first shirt on item list$")
+	public void select_the_first_shirt_on_item_list() throws Throwable {
+		EbaySearchResultActionsObj.selectCottonTee();
+	}
 }

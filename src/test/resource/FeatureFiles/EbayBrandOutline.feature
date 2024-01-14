@@ -26,4 +26,4 @@ Description: User should able to filter items by Brand
 		|Items		|Color			|
 		|Shoes		|Black			|
 		|Shirts		|White			|
-		|Pants		|Blue 			|
+		|Tie		|Blue 			|
