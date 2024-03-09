@@ -10,17 +10,26 @@ public class EbayHomePageSteps {
 	EbayHomePageActions EbayHomePageActionsObj = new EbayHomePageActions();
 	
 	@Given("^Open Ebay Homepage$")
-	public void open_Ebay_Homepage() throws Throwable {
-		//Opening ebay homepage in setupdriver class
-
-	}
+	public void open_Ebay_Homepage() throws Throwable {               //Opening ebay homepage in setupdriver class
+		EbayHomePageActionsObj.navigatetoEbay();
+     }
 	
 	@When("^Search for Shoes$")
 	public void search_for_shoes() throws Throwable {
 		EbayHomePageActionsObj.searchShoes();
 	}
 	
-	@Given("^Search for \"([^\"]*)\"$")
+	@When("^Search for Pants$")
+	public void search_for_Pants() throws Throwable {
+	
+	}
+	
+	@When("^Search for Shirts$")
+	public void search_for_Shirts() throws Throwable {
+	  
+	}
+
+    @Given("^Search for \"([^\"]*)\"$")
 	public void search_for(String items) throws Throwable {
 		EbayHomePageActionsObj.searchItems(items);
 	}

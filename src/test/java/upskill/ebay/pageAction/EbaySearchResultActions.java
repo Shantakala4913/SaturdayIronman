@@ -18,7 +18,7 @@ public class EbaySearchResultActions {
 	public void verifyShoesItems(){
 		
 		//Option 1
-		Assert.assertTrue(EbaySearchResultLocatorsObj.txtShoes.isDisplayed());
+		Assert.assertTrue(EbaySearchResultLocatorsObj.txtShoes.isDisplayed()); //(boolean Assert) Assert means to verfiy. comes from testng
 				
 		//Option 2
 		Assert.assertEquals(EbaySearchResultLocatorsObj.txtShoes.getText(), "Shoes");

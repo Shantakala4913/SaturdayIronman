@@ -22,11 +22,16 @@ public class EbayHomePageActions {
 		PageFactory.initElements(SetupDrivers.driver, EbayHomePageLocatorsObj);
 	}
 	
+	public void navigatetoEbay(){
+		SetupDrivers.driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	}
+	
+	
 	public void searchShoes(){
-		EbayHomePageLocatorsObj.txtbxSearch.sendKeys("Shoes");
+		EbayHomePageLocatorsObj.txtbxSearch.sendKeys("Shoes");// send keys means to write something in selenium terms
 //		WebDriverWait explicitWait = new WebDriverWait(SetupDrivers.driver, 20);
 //		explicitWait.until(ExpectedConditions.elementToBeClickable(EbayHomePageLocatorsObj.btnSearch));
-		EbayHomePageLocatorsObj.btnSearch.click();
+		EbayHomePageLocatorsObj.btnSearch.click(); 
 //		EbayHomePageLocatorsObj.btnSearch.sendKeys(Keys.ENTER);
 	}
 	

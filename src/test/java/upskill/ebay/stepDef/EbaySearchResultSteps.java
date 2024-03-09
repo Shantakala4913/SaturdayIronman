@@ -13,6 +13,19 @@ public class EbaySearchResultSteps {
 		EbaySearchResultActionsObj.verifyShoesItems();
 	}
 	
+	@Then("^Item list should have only pants related products$")
+	public void item_list_should_have_only_pants_related_products() throws Throwable {
+
+	}
+	
+	@Then("^Item list should have only shirts related products$")
+	public void item_list_should_have_only_shirts_related_products() throws Throwable {
+
+	}
+	
+	
+
+	
 	@When("^Filter by \"([^\"]*)\"$")
 	public void filter_by(String brand) throws Throwable {
 		EbaySearchResultActionsObj.filterBrand(brand);
